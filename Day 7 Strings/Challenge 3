@@ -1,0 +1,16 @@
+#Ask the user for full name → Print only initials.
+#Example:
+
+#Input: Mohamed Hilowle Ahmed
+#Output: M.H.A
+
+
+full_name = input("Enter your full name: ")
+
+parts = full_name.strip().split()   # Split into words
+initials = ""
+
+for word in parts:
+    initials += word[0].upper() + "."
+
+print("Your initials are:", initials)
